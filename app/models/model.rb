@@ -7,8 +7,12 @@ class Dog
     @name = name 
     @breed = breed 
     @age = age 
-    @self << DOGS
+    DOGS << self 
     end
+    
+  def self.all 
+    DOGS
+  end
   
 #should hav name, breed and age attributes
 
